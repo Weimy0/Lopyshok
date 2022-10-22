@@ -7,10 +7,12 @@
         xmlns:vm="clr-namespace:Lopushok.ViewModels"
         mc:Ignorable="d"
         Title="LopushokLauncher" 
-        d:Width="850"
         Width="866"
-        d:Height="710"
-        Height="734">
+        MinWidth="866"
+        MaxWidth="866"
+        Height="734"
+        MinHeight="734"
+        MaxHeight="734">
 
     <Window.DataContext>
         <vm:LopushokLauncherViewModel/>
@@ -89,6 +91,7 @@
                                             <Image 
                                                 Source="C:\Users\Vegas\Desktop\Lopushok\Lopushok\Lopushok\Products\picture.png"
                                                 Margin="9"/>
+                                            
                                             <Grid Grid.Column="1" >
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition 
@@ -117,12 +120,14 @@
                                                         FontSize="30" 
                                                         Margin="5,1,1,1" />
                                                 </StackPanel>
+                                                
                                                 <TextBlock 
                                                     Grid.Row="1" 
                                                     Text="Артикул" 
                                                     FontSize="23" 
                                                     FontFamily="Gabriola" 
                                                     Margin="12,-10,1,1"/>
+                                                
                                                 <StackPanel
                                                     Grid.Row="2" 
                                                     Orientation="Horizontal">
@@ -138,6 +143,7 @@
                                                         Margin="2,-10,1,1"/>
                                                 </StackPanel>
                                             </Grid>
+                                            
                                             <TextBlock 
                                                 Grid.Column="2"
                                                 FontFamily="Gabriola" 
